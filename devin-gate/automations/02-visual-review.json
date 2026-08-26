@@ -1,0 +1,34 @@
+{
+  "name": "Visual review gate",
+  "run_as": { "type": "organization" },
+
+  "triggers": [
+    {
+      "event_type": "github:pull_request",
+      "conditions": {
+        "any": [
+          {
+            "all": [
+              { "field": "repository.full_name", "operator": "eq", "value": "REPO_PLACEHOLDER" },
+              { "field": "action", "operator": "in", "value": ["opened", "synchronize"] },
+              {
+                "field": "pull_request.head.ref",
+                "operator": "starts_with",
+                "value": "devin/ui-fix/"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+
+  "actions": [
+    {
+      "type": "start_session",
+      "prompt": "Use @skills:visual-review-gate on @REPO_PLACEHOLDER. The triggering pull request is in the event payload below."
+    }
+  ],
+
+  "limits": { "max_acu_limit": 25 }
+}

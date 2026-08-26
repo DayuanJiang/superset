@@ -1,0 +1,30 @@
+{
+  "name": "Autofix UI issues",
+  "run_as": { "type": "organization" },
+
+  "triggers": [
+    {
+      "event_type": "github:issues",
+      "conditions": {
+        "any": [
+          {
+            "all": [
+              { "field": "repository.full_name", "operator": "eq", "value": "REPO_PLACEHOLDER" },
+              { "field": "action", "operator": "eq", "value": "labeled" },
+              { "field": "label.name", "operator": "eq", "value": "devin:autofix" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+
+  "actions": [
+    {
+      "type": "start_session",
+      "prompt": "Use @skills:fix-ui-issue on @REPO_PLACEHOLDER. The triggering issue is in the event payload below."
+    }
+  ],
+
+  "limits": { "max_acu_limit": 12 }
+}
