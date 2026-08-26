@@ -1,6 +1,6 @@
 ---
 name: fix-ui-issue
-description: Fix a UI issue: implement the frontend change the issue describes and open a PR.
+description: Fix a UI issue by implementing the frontend change the issue describes, then open a PR.
 triggers: ["user"]
 ---
 
