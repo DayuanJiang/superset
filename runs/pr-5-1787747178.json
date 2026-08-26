@@ -1,0 +1,98 @@
+{
+  "pr_number": 5,
+  "pr_url": "https://github.com/DayuanJiang/superset/pull/5",
+  "head_branch": "devin/ui-fix/1",
+  "head_sha": "c79689cebd3bff777f7a0ed5b2e936532ab445b4",
+  "base_branch": "master",
+  "base_sha": "4306c556cc3a4c329846c4eb3da53e122e94be2a",
+  "session": "https://app.devin.ai/sessions/54f30f1299d24e48930eac851cced8d6",
+  "timestamp_unix": 1787747178,
+  "verdict": "FAIL",
+  "commit_status": {
+    "context": "visual-review",
+    "state": "failure"
+  },
+  "reasoning": "The PR passes themeOverrides={{ oddRowBackgroundColor: theme.colorBgLayout }} to ThemedAgGridReact, replacing the default odd-row colour theme.colorFillQuaternary. In the light theme this raises stripe contrast (1.0438 -> 1.0902) and reproduces the classic table chart exactly (#f5f5f5 over #ffffff). In the dark theme (supersetDark) colorBgLayout resolves to #000000, which is identical to the AG Grid surface the rows are painted on (--ag-background-color: #000), so the zebra striping disappears completely: measured painted odd/even row colours are both rgb(0,0,0) and stripe contrast drops from 1.0607 on base to 1.0000 on the PR. Losing the row-tracking affordance entirely in one of the two shipped themes is a rendering regression, so the gate fails despite the light-theme improvement. The change also does not achieve the parity it claims in dark mode: the classic table still stripes in dark (1.1399, #000000 odd rows over a #141414 container surface) because its unstriped rows sit on colorBgContainer, whereas AG Grid's base surface is the page background itself.",
+  "components_inspected": [
+    {
+      "story": "chart-plugins-plugin-chart-ag-grid-table--basic",
+      "component": "plugins/plugin-chart-ag-grid-table AgGridTable (the changed component)",
+      "themes": ["superset (light)", "supersetDark (dark)"]
+    },
+    {
+      "story": "chart-plugins-plugin-chart-table--basic",
+      "component": "plugins/plugin-chart-table TableChart (reference for the look the PR aims to match)",
+      "themes": ["superset (light)", "supersetDark (dark)"]
+    }
+  ],
+  "themes": ["superset (light)", "supersetDark (dark)"],
+  "evidence": {
+    "method": "Storybook dev server on localhost:6006, stories loaded in Playwright/Chromium at viewport 1200x800, deviceScaleFactor 1. For each AG Grid row the computed background-color was read from the DOM, and the painted colour was sampled from the full-page screenshot at the row's vertical centre in an empty part of the first column (x = row.left + 180). Stripe contrast is the WCAG relative-luminance contrast ratio between the painted even-row and odd-row colours. Base and PR were rendered from the same Storybook instance with the same local-only story data fix (see local_only_story_adjustment).",
+    "measurements": [
+      {
+        "target": "ag-grid-table, light theme, base",
+        "odd_row_token": "rgba(0,0,0,0.02) (colorFillQuaternary)",
+        "painted_even": "rgb(255,255,255)",
+        "painted_odd": "rgb(250,250,250)",
+        "stripe_contrast_ratio": 1.0438
+      },
+      {
+        "target": "ag-grid-table, light theme, PR",
+        "odd_row_token": "#f5f5f5 (colorBgLayout)",
+        "painted_even": "rgb(255,255,255)",
+        "painted_odd": "rgb(245,245,245)",
+        "stripe_contrast_ratio": 1.0902
+      },
+      {
+        "target": "ag-grid-table, dark theme, base",
+        "odd_row_token": "rgba(255,255,255,0.04) (colorFillQuaternary)",
+        "painted_even": "rgb(0,0,0)",
+        "painted_odd": "rgb(10,10,10)",
+        "stripe_contrast_ratio": 1.0607
+      },
+      {
+        "target": "ag-grid-table, dark theme, PR",
+        "odd_row_token": "#000000 (colorBgLayout)",
+        "painted_even": "rgb(0,0,0)",
+        "painted_odd": "rgb(0,0,0)",
+        "stripe_contrast_ratio": 1.0,
+        "note": "identical pixels: striping gone"
+      },
+      {
+        "target": "classic plugin-chart-table, light theme (reference)",
+        "painted_rows": "rgb(245,245,245) / rgb(255,255,255)",
+        "stripe_contrast_ratio": 1.0902
+      },
+      {
+        "target": "classic plugin-chart-table, dark theme (reference)",
+        "painted_rows": "rgb(0,0,0) / rgb(20,20,20)",
+        "stripe_contrast_ratio": 1.1399
+      }
+    ],
+    "screenshots": {
+      "ag-grid light base": "runs/pr-5-1787747178/ag-grid-light-base.png",
+      "ag-grid light PR": "runs/pr-5-1787747178/ag-grid-light-pr.png",
+      "ag-grid dark base": "runs/pr-5-1787747178/ag-grid-dark-base.png",
+      "ag-grid dark PR": "runs/pr-5-1787747178/ag-grid-dark-pr.png",
+      "full story light base": "runs/pr-5-1787747178/story-light-base.png",
+      "full story light PR": "runs/pr-5-1787747178/story-light-pr.png",
+      "full story dark base": "runs/pr-5-1787747178/story-dark-base.png",
+      "full story dark PR": "runs/pr-5-1787747178/story-dark-pr.png",
+      "classic table light (reference)": "runs/pr-5-1787747178/classic-table-light.png",
+      "classic table dark (reference)": "runs/pr-5-1787747178/classic-table-dark.png"
+    }
+  },
+  "changed_files": [
+    {
+      "path": "superset-frontend/plugins/plugin-chart-ag-grid-table/src/AgGridTable/index.tsx",
+      "story_coverage": "covered by chart-plugins-plugin-chart-ag-grid-table--basic"
+    }
+  ],
+  "files_without_story_coverage": [],
+  "local_only_story_adjustment": "superset-frontend/plugins/plugin-chart-ag-grid-table/src/stories/AgGridTable.stories.tsx does not render on master or on the PR branch: transformProps throws TypeError: Cannot read properties of undefined (reading 'forEach') at chartProps.datasource.metrics.forEach because the story's datasource has no metrics/columns. metrics: [] and columns: [] were added to the story datasource locally to make it render. This adjustment was applied identically to both branches and was not committed.",
+  "environment": {
+    "node": "24.16.0",
+    "storybook": "10.5.8 dev server on port 6006",
+    "browser": "Playwright Chromium (headless shell 151.0.7922.34)"
+  }
+}
