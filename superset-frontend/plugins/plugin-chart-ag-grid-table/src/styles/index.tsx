@@ -329,6 +329,19 @@ export const StyledChartContainer = styled.div<{
       );
     }
 
+    /* NULL placeholders read as muted text, unless a conditional format
+       already resolved a contrasting colour for the cell's background. */
+    .ag-cell.dt-is-null {
+      color: var(--ag-cell-value-color, ${theme.colorTextTertiary});
+    }
+
+    .ag-row-hover .ag-cell.dt-is-null {
+      color: var(
+        --ag-cell-value-hover-color,
+        var(--ag-cell-value-color, ${theme.colorTextTertiary})
+      );
+    }
+
     .ag-container {
       border-radius: 0px;
       border: var(--ag-wrapper-border);

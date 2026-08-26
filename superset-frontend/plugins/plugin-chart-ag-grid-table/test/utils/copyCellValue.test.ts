@@ -89,14 +89,16 @@ test('getCellCopyText passes the cell value/node to the valueFormatter', () => {
   );
 });
 
-test('getCellCopyText copies the "N/A" the grid shows for empty cells', () => {
-  // Superset's valueFormatter renders empty/undefined cells as "N/A"; copying an
-  // empty string would not match what the user sees.
+test('getCellCopyText copies the "N/A" the grid shows for NULL cells', () => {
+  // Superset's valueFormatter renders NULL cells as "N/A" (and empty strings as
+  // themselves); copying an empty string for a NULL would not match what the
+  // user sees.
   const valueFormatter = (p: { value: unknown }) =>
-    p.value === undefined || p.value === '' ? 'N/A' : String(p.value);
+    p.value === undefined || p.value === null ? 'N/A' : String(p.value);
   expect(
     getCellCopyText({ value: undefined, colDef: { valueFormatter } }),
   ).toBe('N/A');
+  expect(getCellCopyText({ value: '', colDef: { valueFormatter } })).toBe('');
 });
 
 test('getCellCopyText falls back to the raw value when no formatter is present', () => {
