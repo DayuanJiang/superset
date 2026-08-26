@@ -1,0 +1,786 @@
+{
+  "superset": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "rows": [
+      {
+        "rowIndex": "0",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Michael",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "2.47M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "1",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Christopher",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.73M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "2",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "NullCategory",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "3",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "EmptyCategory",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "900k",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "4",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "MissingCategoryKey",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "800k",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "5",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "N/A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "N/A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "6",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "David",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.57M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "7",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "James",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.51M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "8",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "John",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.43M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "9",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Matthew",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.36M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "10",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Robert",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.31M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "11",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Daniel",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.16M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "12",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Joseph",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.11M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "13",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "William",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.11M",
+            "color": "rgba(0, 0, 0, 0.88)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      }
+    ],
+    "hoveredNullRow": [
+      {
+        "colId": "name",
+        "text": "NullCategory",
+        "color": "rgba(0, 0, 0, 0.88)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+      },
+      {
+        "colId": "category",
+        "text": "N/A",
+        "color": "rgba(0, 0, 0, 0.88)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+      },
+      {
+        "colId": "sum__num",
+        "text": "1M",
+        "color": "rgba(0, 0, 0, 0.88)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+      }
+    ]
+  },
+  "supersetDark": {
+    "bodyBg": "rgb(0, 0, 0)",
+    "rows": [
+      {
+        "rowIndex": "0",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Michael",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "2.47M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "1",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Christopher",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.73M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "2",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "NullCategory",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "3",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "EmptyCategory",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "900k",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "4",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "MissingCategoryKey",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "N/A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "800k",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "5",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "N/A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "N/A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "6",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "David",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.57M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "7",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "James",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.51M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "8",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "John",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.43M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "9",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Matthew",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.36M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "10",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Robert",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.31M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "11",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Daniel",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "B",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.16M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "12",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "Joseph",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "A",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.11M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      },
+      {
+        "rowIndex": "13",
+        "cells": [
+          {
+            "colId": "name",
+            "text": "William",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+          },
+          {
+            "colId": "category",
+            "text": "C",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+          },
+          {
+            "colId": "sum__num",
+            "text": "1.11M",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "bg": "rgba(0, 0, 0, 0)",
+            "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+          }
+        ]
+      }
+    ],
+    "hoveredNullRow": [
+      {
+        "colId": "name",
+        "text": "NullCategory",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-first"
+      },
+      {
+        "colId": "category",
+        "text": "N/A",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text"
+      },
+      {
+        "colId": "sum__num",
+        "text": "1M",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "classes": "ag-cell ag-cell-not-inline-editing ag-cell-auto-height ag-cell-wrap-text ag-column-last"
+      }
+    ]
+  }
+}
