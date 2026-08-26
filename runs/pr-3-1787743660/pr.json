@@ -1,0 +1,566 @@
+{
+  "aggrid-light": {
+    "url": "http://localhost:6006/iframe.html?id=chart-plugins-plugin-chart-ag-grid-table--basic&globals=theme:superset&viewMode=story",
+    "screenshot": "pr-aggrid-light.png",
+    "agOddRowVar": "",
+    "gridBox": {
+      "x": 41,
+      "y": 92.59375,
+      "w": 650,
+      "h": 294
+    },
+    "rows": [
+      {
+        "i": 0,
+        "rowIndex": "0",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-not-inline-editing",
+        "computedRowBg": "rgb(255, 255, 255)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.65
+      },
+      {
+        "i": 1,
+        "rowIndex": "1",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.67
+      },
+      {
+        "i": 2,
+        "rowIndex": "2",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(255, 255, 255)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.73
+      },
+      {
+        "i": 3,
+        "rowIndex": "3",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.73
+      },
+      {
+        "i": 4,
+        "rowIndex": "4",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(255, 255, 255)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.75
+      },
+      {
+        "i": 5,
+        "rowIndex": "5",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.72
+      },
+      {
+        "i": 6,
+        "rowIndex": "6",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(255, 255, 255)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.78
+      },
+      {
+        "i": 7,
+        "rowIndex": "7",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.77
+      }
+    ],
+    "evenPainted": "#ffffff",
+    "oddPainted": "#f5f5f5",
+    "stripeContrastRatio": 1.0902,
+    "stripeRgbDelta": [
+      10,
+      10,
+      10
+    ]
+  },
+  "aggrid-dark": {
+    "url": "http://localhost:6006/iframe.html?id=chart-plugins-plugin-chart-ag-grid-table--basic&globals=theme:supersetDark&viewMode=story",
+    "screenshot": "pr-aggrid-dark.png",
+    "agOddRowVar": "",
+    "gridBox": {
+      "x": 41,
+      "y": 92.59375,
+      "w": 650,
+      "h": 294
+    },
+    "rows": [
+      {
+        "i": 0,
+        "rowIndex": "0",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.65
+      },
+      {
+        "i": 1,
+        "rowIndex": "1",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.68
+      },
+      {
+        "i": 2,
+        "rowIndex": "2",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.73
+      },
+      {
+        "i": 3,
+        "rowIndex": "3",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.75
+      },
+      {
+        "i": 4,
+        "rowIndex": "4",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.75
+      },
+      {
+        "i": 5,
+        "rowIndex": "5",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.74
+      },
+      {
+        "i": 6,
+        "rowIndex": "6",
+        "cls": "ag-row-even ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.78
+      },
+      {
+        "i": 7,
+        "rowIndex": "7",
+        "cls": "ag-row-odd ag-row-no-focus ag-row ag-row-level-0 ag-row-position-absolute ag-row-not-inline-editing",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.78
+      }
+    ],
+    "evenPainted": "#000000",
+    "oddPainted": "#000000",
+    "stripeContrastRatio": 1,
+    "stripeRgbDelta": [
+      0,
+      0,
+      0
+    ]
+  },
+  "classic-light": {
+    "url": "http://localhost:6006/iframe.html?id=chart-plugins-plugin-chart-table--basic&globals=theme:superset&viewMode=story",
+    "screenshot": "pr-classic-light.png",
+    "agOddRowVar": "",
+    "gridBox": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 900
+    },
+    "rows": [
+      {
+        "i": 0,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.54
+      },
+      {
+        "i": 1,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.55
+      },
+      {
+        "i": 2,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.59
+      },
+      {
+        "i": 3,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.62
+      },
+      {
+        "i": 4,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.62
+      },
+      {
+        "i": 5,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.61
+      },
+      {
+        "i": 6,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(245, 245, 245)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#f5f5f5",
+        "paintedRgb": [
+          245,
+          245,
+          245
+        ],
+        "modeShare": 0.61
+      },
+      {
+        "i": 7,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(0, 0, 0, 0.88)",
+        "paintedHex": "#ffffff",
+        "paintedRgb": [
+          255,
+          255,
+          255
+        ],
+        "modeShare": 0.65
+      }
+    ],
+    "evenPainted": "#f5f5f5",
+    "oddPainted": "#ffffff",
+    "stripeContrastRatio": 1.0902,
+    "stripeRgbDelta": [
+      -10,
+      -10,
+      -10
+    ]
+  },
+  "classic-dark": {
+    "url": "http://localhost:6006/iframe.html?id=chart-plugins-plugin-chart-table--basic&globals=theme:supersetDark&viewMode=story",
+    "screenshot": "pr-classic-dark.png",
+    "agOddRowVar": "",
+    "gridBox": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 900
+    },
+    "rows": [
+      {
+        "i": 0,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.54
+      },
+      {
+        "i": 1,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#141414",
+        "paintedRgb": [
+          20,
+          20,
+          20
+        ],
+        "modeShare": 0.55
+      },
+      {
+        "i": 2,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.59
+      },
+      {
+        "i": 3,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#141414",
+        "paintedRgb": [
+          20,
+          20,
+          20
+        ],
+        "modeShare": 0.62
+      },
+      {
+        "i": 4,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.62
+      },
+      {
+        "i": 5,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#141414",
+        "paintedRgb": [
+          20,
+          20,
+          20
+        ],
+        "modeShare": 0.61
+      },
+      {
+        "i": 6,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgb(0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#000000",
+        "paintedRgb": [
+          0,
+          0,
+          0
+        ],
+        "modeShare": 0.61
+      },
+      {
+        "i": 7,
+        "rowIndex": null,
+        "cls": "",
+        "computedRowBg": "rgba(0, 0, 0, 0)",
+        "computedCellBg": "rgba(0, 0, 0, 0)",
+        "computedCellColor": "rgba(255, 255, 255, 0.85)",
+        "paintedHex": "#141414",
+        "paintedRgb": [
+          20,
+          20,
+          20
+        ],
+        "modeShare": 0.65
+      }
+    ],
+    "evenPainted": "#000000",
+    "oddPainted": "#141414",
+    "stripeContrastRatio": 1.1399,
+    "stripeRgbDelta": [
+      -20,
+      -20,
+      -20
+    ]
+  }
+}

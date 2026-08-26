@@ -1,0 +1,142 @@
+{
+  "pr_number": 3,
+  "pr_url": "https://github.com/DayuanJiang/superset/pull/3",
+  "head_branch": "devin/ui-fix/1",
+  "head_sha": "a7fd44a241d93d2871b6ac01c0162136f3775222",
+  "base_branch": "master",
+  "base_sha": "ba2d282d14d7f5a08c3667e7482e7853e35e168e",
+  "session": "https://app.devin.ai/sessions/67e1c00e65dc4ddaa4d2a16517030f13",
+  "timestamp_unix": 1787743660,
+  "verdict": "FAIL",
+  "commit_status": {
+    "context": "visual-review",
+    "state": "failure"
+  },
+  "reasoning": "The PR replaces the AG Grid odd-row background (theme.colorFillQuaternary) with theme.colorBgLayout, both in the ThemedAgGridReact themeOverrides and in useColDefs. In the light theme this increases stripe contrast and matches the classic table chart. In the dark theme (supersetDark) colorBgLayout resolves to #000000, which is identical to the AG Grid surface background (--ag-background-color: #000), so the zebra striping disappears entirely: measured odd/even stripe contrast drops from 1.0607 on base to 1.0000 on the PR. Zebra striping is a row-tracking affordance; losing it completely in one of the two shipped themes is a rendering regression, so the gate fails even though the light theme improved. The classic table chart the PR aims to match still shows striping in dark (1.1399) because its non-striped rows are transparent over a lighter surface, so the PR does not achieve parity in dark mode.",
+  "components_inspected": [
+    {
+      "story": "chart-plugins-plugin-chart-ag-grid-table--basic",
+      "component": "plugins/plugin-chart-ag-grid-table AgGridTable",
+      "themes": [
+        "superset (light)",
+        "supersetDark (dark)"
+      ]
+    },
+    {
+      "story": "chart-plugins-plugin-chart-table--basic",
+      "component": "plugins/plugin-chart-table TableChart (reference baseline for the intended look)",
+      "themes": [
+        "superset (light)",
+        "supersetDark (dark)"
+      ]
+    }
+  ],
+  "themes": [
+    "superset (light)",
+    "supersetDark (dark)"
+  ],
+  "evidence": {
+    "method": "Storybook (localhost:6006) rendered with Playwright/Chromium at 1280x900, deviceScaleFactor 1. For each AG Grid row the computed background-color was read and the row's painted pixel colour was taken as the modal pixel value along the row's vertical centre line (left half of the row, avoiding the value-bar cells). Stripe contrast is the WCAG relative-luminance contrast ratio between the painted even-row and odd-row colours. Base branch and PR branch were rendered with the same Storybook instance and the same local-only story data fix (see local_only_story_adjustment).",
+    "measurements": [
+      {
+        "target": "ag-grid table, light theme",
+        "branch": "base",
+        "even_row_painted": "#ffffff",
+        "odd_row_painted": "#fafafa",
+        "odd_row_computed_background": "rgba(0, 0, 0, 0.02)",
+        "stripe_contrast_ratio": 1.0438
+      },
+      {
+        "target": "ag-grid table, light theme",
+        "branch": "pr",
+        "even_row_painted": "#ffffff",
+        "odd_row_painted": "#f5f5f5",
+        "stripe_contrast_ratio": 1.0902
+      },
+      {
+        "target": "ag-grid table, dark theme",
+        "branch": "base",
+        "even_row_painted": "#000000",
+        "odd_row_painted": "#0a0a0a",
+        "odd_row_computed_background": "rgba(255, 255, 255, 0.04)",
+        "stripe_contrast_ratio": 1.0607
+      },
+      {
+        "target": "ag-grid table, dark theme",
+        "branch": "pr",
+        "even_row_painted": "#000000",
+        "odd_row_painted": "#000000",
+        "odd_row_computed_background": "rgb(0, 0, 0)",
+        "stripe_contrast_ratio": 1.0,
+        "note": "striping fully absent"
+      },
+      {
+        "target": "classic table chart, light theme (reference, unchanged by PR)",
+        "branch": "base+pr",
+        "even_row_painted": "#f5f5f5",
+        "odd_row_painted": "#ffffff",
+        "stripe_contrast_ratio": 1.0902
+      },
+      {
+        "target": "classic table chart, dark theme (reference, unchanged by PR)",
+        "branch": "base+pr",
+        "even_row_painted": "#000000",
+        "odd_row_painted": "#141414",
+        "stripe_contrast_ratio": 1.1399
+      }
+    ],
+    "css_variable_probe_pr_dark": {
+      "--ag-background-color": "#000",
+      "--ag-odd-row-background-color": "#000000",
+      "--ag-header-background-color": "#000",
+      "--ag-foreground-color": "rgba(255,255,255,0.85)"
+    },
+    "screenshots": {
+      "base_aggrid_light": "base-aggrid-light.png",
+      "pr_aggrid_light": "pr-aggrid-light.png",
+      "base_aggrid_dark": "base-aggrid-dark.png",
+      "pr_aggrid_dark": "pr-aggrid-dark.png",
+      "crops": [
+        "base-aggrid-light-crop.png",
+        "pr-aggrid-light-crop.png",
+        "base-aggrid-dark-crop.png",
+        "pr-aggrid-dark-crop.png"
+      ],
+      "dark_crops_brightness_boosted_8x": [
+        "base-aggrid-dark-crop-boost8x.png",
+        "pr-aggrid-dark-crop-boost8x.png"
+      ],
+      "classic_reference": [
+        "base-classic-light.png",
+        "base-classic-dark.png"
+      ]
+    },
+    "raw_measurements": [
+      "base.json",
+      "pr.json"
+    ]
+  },
+  "changed_files": [
+    {
+      "path": "superset-frontend/plugins/plugin-chart-ag-grid-table/src/AgGridTable/index.tsx",
+      "story_coverage": "chart-plugins-plugin-chart-ag-grid-table--basic"
+    },
+    {
+      "path": "superset-frontend/plugins/plugin-chart-ag-grid-table/src/utils/useColDefs.ts",
+      "story_coverage": "chart-plugins-plugin-chart-ag-grid-table--basic (rendered indirectly; the changed conditional-formatting/odd-row cell colour path is only partly exercised by the default story data)"
+    },
+    {
+      "path": "superset-frontend/plugins/plugin-chart-ag-grid-table/test/stripeTheming.test.tsx",
+      "story_coverage": null
+    },
+    {
+      "path": "superset-frontend/plugins/plugin-chart-ag-grid-table/test/utils/useColDefs.test.ts",
+      "story_coverage": null
+    }
+  ],
+  "uncovered_files": [
+    "superset-frontend/plugins/plugin-chart-ag-grid-table/test/stripeTheming.test.tsx (test file, no rendering)",
+    "superset-frontend/plugins/plugin-chart-ag-grid-table/test/utils/useColDefs.test.ts (test file, no rendering)"
+  ],
+  "local_only_story_adjustment": "superset-frontend/plugins/plugin-chart-ag-grid-table/src/stories/AgGridTable.stories.tsx: added metrics: [] and columns: [] to the story datasource, because transformProps.ts calls .forEach on datasource.metrics/datasource.columns and the story otherwise throws before rendering. Applied identically on both branches, not committed to the PR."
+}
