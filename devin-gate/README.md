@@ -60,6 +60,10 @@ Prerequisites:
   `ManageOrgAutomations` permission
 - This fork connected in Devin through the GitHub App (the gate writes commit statuses
   through its permissions)
+- **Automation scope opened for public repos.** By default GitHub automations only fire
+  on private repositories, and a public fork's events are dropped silently. In
+  [Settings → Connections → GitHub](https://app.devin.ai/settings/connections/github),
+  set the connection's **Automation scope** to **All installed repos**
 - Issues enabled on the fork, and the label created:
 
 ```bash
