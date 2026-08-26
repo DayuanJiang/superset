@@ -483,7 +483,7 @@ test('cellStyle uses striped odd-row surface for adaptive contrast', () => {
       wrapper: makeThemeWrapper({
         ...supersetTheme,
         colorBgBase: '#ffffff',
-        colorFillQuaternary: '#000000',
+        colorBgLayout: '#000000',
       }),
     },
   );
