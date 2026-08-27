@@ -54,10 +54,6 @@ so concurrent runs never overwrite each other).
 
 ## Running it
 
-A note on Docker: this solution ships no Dockerfile because there is nothing to
-self-host. Event matching, session dispatch, and the review sessions themselves all
-run on the Devin platform; the files above are the entire deployment.
-
 Prerequisites:
 
 - A Devin service user API key (`cog_` prefix) and the organization ID, with the
