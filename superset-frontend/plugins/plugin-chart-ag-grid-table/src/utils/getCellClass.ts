@@ -19,6 +19,7 @@
 
 import { CellClassParams } from '@superset-ui/core/components/ThemedAgGridReact';
 import { InputColumn } from '../types';
+import { isNullValue } from './formatValue';
 
 type GetCellClassParams = CellClassParams & {
   col: InputColumn;
@@ -26,8 +27,11 @@ type GetCellClassParams = CellClassParams & {
 };
 
 const getCellClass = (params: GetCellClassParams) => {
-  const { col, emitCrossFilters } = params;
+  const { col, emitCrossFilters, value, node } = params;
   let className = '';
+  if (node?.rowPinned == null && isNullValue(value)) {
+    className += ' dt-is-null';
+  }
   if (emitCrossFilters) {
     if (!col?.isMetric) {
       className += ' dt-is-filter';

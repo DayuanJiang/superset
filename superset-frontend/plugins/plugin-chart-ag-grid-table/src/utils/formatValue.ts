@@ -79,16 +79,23 @@ export function formatColumnValue(
   );
 }
 
+/**
+ * A NULL cell value: missing data, or a temporal null (wrapped in a Date
+ * object). An empty string is a value, not a NULL.
+ */
+export const isNullValue = (value: unknown): boolean =>
+  !isDefined(value) ||
+  (value instanceof DateWithFormatter && value.input === null);
+
 export const valueFormatter = (
   params: ValueFormatterParams,
   col: InputColumn,
 ): string => {
   const { value, node } = params;
-  if (
-    isDefined(value) &&
-    value !== '' &&
-    !(value instanceof DateWithFormatter && value.input === null)
-  ) {
+  if (value === '') {
+    return '';
+  }
+  if (!isNullValue(value)) {
     return col.formatter?.(value) || value;
   }
   if (node?.level === -1) {
@@ -109,5 +116,5 @@ export const valueGetter = (params: ValueGetterParams, col: InputColumn) => {
   if (col.isNumeric) {
     return undefined;
   }
-  return '';
+  return null;
 };
