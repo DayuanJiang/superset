@@ -44,6 +44,7 @@ import {
   SelectionChangedEvent,
 } from '@superset-ui/core/components/ThemedAgGridReact';
 import { t } from '@apache-superset/core/translation';
+import { useTheme } from '@apache-superset/core/theme';
 import {
   AgGridChartState,
   DataRecordValue,
@@ -151,6 +152,7 @@ const AgGridDataTable: FunctionComponent<AgGridTableProps> = memo(
     metricColumns = [],
     chartState,
   }) => {
+    const theme = useTheme();
     const gridRef = useRef<AgGridReact>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const rowData = useMemo(() => data, [data]);
@@ -187,6 +189,13 @@ const AgGridDataTable: FunctionComponent<AgGridTableProps> = memo(
         minWidth: 100,
       }),
       [],
+    );
+
+    // Match the classic table chart's zebra stripe contrast, which alternates
+    // colorBgLayout over the base surface.
+    const themeOverrides = useMemo(
+      () => ({ oddRowBackgroundColor: theme.colorBgLayout }),
+      [theme.colorBgLayout],
     );
 
     // Memoize container style
@@ -514,6 +523,7 @@ const AgGridDataTable: FunctionComponent<AgGridTableProps> = memo(
         <ThemedAgGridReact
           ref={gridRef}
           onGridReady={onGridReady}
+          themeOverrides={themeOverrides}
           className="ag-container"
           rowData={rowData}
           headerHeight={36}
